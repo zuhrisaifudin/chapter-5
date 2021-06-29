@@ -1,0 +1,655 @@
+/**
+* Tugas Untuk Binar Academy
+* Author Zuhri Saifudin
+* Wave 10
+* Fasil Arie May
+*/
+
+
+/*Global Setting*/
+
+
+
+body {
+  color: #fff;
+  line-height: 1;
+}
+
+@font-face {
+font-family: 'Apercu';
+src: url('../assets/fonts/ApercuPro-Medium.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Apercu';
+src: url('../assets/fonts/ApercuPro-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Apercu';
+src: url('../assets/fonts/ApercuPro-Bold.woff') format('woff');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Apercu';
+src: url('../assets/fonts/ApercuPro-Light.woff') format('woff');
+font-weight: 300;
+font-style: normal;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+#header {
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  z-index: 997;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 90px;
+}
+.pading-12{
+  padding-top: 12px;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#header .logo > a{
+  color: #fff;
+  text-decoration: none
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+
+}
+
+
+/*--------------------------------------------------------------
+# Sign Up From
+--------------------------------------------------------------*/
+.signup-form{
+  padding-right: 15px;
+}
+
+
+
+.signup-form a:hover {
+  color: #34b7a7;
+}
+.signup-form-ul{
+  display: inline-flex;
+}
+.signup-form-ul > li > a{
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.signup-form-ul > li:last-child{
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero{
+	height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+#hero::before{
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url('/images/img/main-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width:100% ;
+  z-index: -100;
+
+
+}
+.hero-header{
+  font-family: Arial;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 83px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.hero-desc{
+    font-family: 'Bebas Neue', cursive;
+	color: #fff;
+	line-height: 2em;
+}
+.btn-play{
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  border-radius: 4px;
+  margin: auto;
+  height: 60px;
+  padding: 20px 70px 20px 70px;
+}
+.hero-down{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justified;
+  text-transform: uppercase;
+}
+.hero-arrow{
+  position: absolute;
+  padding-top: 24rem;
+}
+/*--------------------------------------------------------------
+# Games Section
+--------------------------------------------------------------*/
+#games{
+  height: 100vh;
+  background-image: url("/images/img/bg-dua.png");
+}
+.games-pt{
+  padding-top: 15%;
+}
+.games-header{
+  font-family: 'Apercu';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.games-desc{
+  font-family: 'Apercu';
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-align: left;
+
+}
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+
+#features{
+  height: 100vh;
+  background-size:cover ;
+  background-image: url("/images/img/bg-main-e.png");
+}
+.feature-timeline{
+  padding-left: 100px;
+}
+.feature-title{
+  padding-top: 169px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.feature-main{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.timeline-core{
+  position: relative;
+  margin: 0 auto;
+  padding-top: 72px;
+}
+.timeline-core::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  top: 87px !important;
+  background-color: white;
+  top: 19px;
+  bottom: 0;
+  margin-left: 5px;
+}
+.blank-timeline{
+  padding-top: 37px;
+}
+.blank-mode{
+  padding-top: 20px;
+}
+.pl-5{
+  padding-left: 41px;
+}
+.timeline-line {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  border: 4px solid #ffffff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  left: -1px;
+}
+.timeline-title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #FFB548;
+}
+.timeline-desc{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justified;
+  padding-top: 5px;
+
+}
+/*--------------------------------------------------------------
+# Requirement Section
+--------------------------------------------------------------*/
+#requirements{
+  height: 100vh;
+  background-size:cover ;
+  background-image: url("/images/img/bg-requirment.png");
+  text-transform: uppercase;
+}
+.requirements-title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-align: left;
+  padding-top: 136px;
+  padding-bottom: 80px;
+}
+.requirements-main{
+  border: 9px solid;
+  border-image: url('/images/img/bg-requirement.png') 10 round;
+}
+.requirements-desc{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  padding-top: 14px;
+  padding-left: 16px;
+}
+.requirements-area{
+  padding-left: 16px;
+  padding-bottom: 28px;
+}
+.border-l{
+  border-bottom: 1px solid #4d4d4f;
+  padding-bottom: 20px;
+  border-right: 1px solid #4d4d4f;
+}
+.border-y{
+  border-bottom: 1px solid #4d4d4f;
+  padding-bottom: 20px;
+}
+/*--------------------------------------------------------------
+# Score Section
+--------------------------------------------------------------*/
+#score{
+  height: 100vh;
+  border-radius: 0px;
+  background: #080A0B;
+}
+.score-card{
+  padding-top: 9.9rem;
+}
+.score-title{
+  font-family: Arial;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 3px;
+  text-align: left;
+  padding-top: 370px;
+}
+.score-desc{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 379px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.btn-seemore{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+  color: #000000;
+  height: 60px;
+  width: 260px;
+
+}
+.member{
+   background: rgba(255, 255, 255, 0.08);
+   border-radius: 10px;
+   width: 453.89px;
+   height: 205px;
+   margin-bottom: 29px;
+   padding: 13px;
+ }
+.member-info > h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #FFB548;
+  padding-left: 22px;
+}
+.member-info > span{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justified;
+  opacity: 0.5;
+  color: #FFFFFF;
+  padding-left: 22px;
+
+}
+
+.member-date{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 0.5;
+  position: absolute;
+  padding: 141px 0px 0px 13px;
+}
+.member-desc{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.51px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  position: absolute;
+  padding-top: 103px;
+  padding-left: 13px;
+}
+.member-twitter{
+  position: absolute;
+  padding-left: 24rem;
+  padding-top: 21px;
+}
+.member-info{
+  padding-top: 17px;
+}
+.member-pic{
+  padding-top: 10px;
+}
+.member-fluid-img::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  background: url("/images/img/ellipse.png");
+  background-repeat: no-repeat;
+  background-position: 75% 40%;
+
+}
+.member-left{
+  margin-left: 10.5rem;
+}
+/*--------------------------------------------------------------
+# Fotter Section
+--------------------------------------------------------------*/
+
+#footer{
+  height: 959.87px;
+  background: #080A0B;
+  font-size: 14px;
+  padding-top: 147px;
+}
+.footer-play{
+  height: 25.772rem;
+  width: 27rem;
+  position: absolute;
+}
+.footer-image{
+  position: relative;
+  height: 43rem;
+}
+.footer-down{
+  padding-top: 80px;
+  opacity: 0.5;
+  border-bottom: 0.873968px solid #FFFFFF;
+  padding-bottom: 40px;
+}
+.footer-bootom > li > a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-right: 30px;
+}
+.footer-copyright{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.copyright-sub{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 0.5;
+
+}
+.copyright-privacy{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer-bootom > ul> li{
+  padding-right: 30px;
+}
+.subcribe{
+  padding-left: 60px;
+}
+.subcribe-title{
+  font-family: arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 261px;
+  color: #FFFFFF;
+  padding-top: 120px;
+}
+.subcribe-form:valid {
+  /*background-color:  #96d3ec!important;*/
+  background: rgba(255, 255, 255, 0.08) !important;
+  border:none;
+
+}
+.subcribe-form::placeholder{
+  color:#FFB548;
+  padding-top: 20px;
+}
+.subcribe-newsletter{
+  font-family: arial;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.subcribe-desc{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+.subcribe-input{
+  display: flex;
+  padding-top: 100px;
+}
+.subcribe-input > label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 0.5;
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 6px;
+
+}
+.subcribe-form{
+  width: 366px;
+  margin-right: 17px;
+}
+.subcribe-button{
+
+  width: 260px;
+  height: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+}
+
